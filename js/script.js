@@ -3,13 +3,14 @@ const game = {
    bank: null, // The current bank player
    equityPile: 0, // The shared equity pile
    turnIndex: 0, // Keeps track of whose turn it is
+   playerCount: 0, // Sets number of players
 };
 var diceContainer = document.getElementById("dice-container");
 var die1 = document.getElementById("die1")
 var die2 = document.getElementById("die2")
 
 function startGame(){
-   document.getElementById('.main-content').style.display = 'block';
+   document.getElementById('input-form').style.display = 'block';
 };
    function rollDie1(){
    return Math.floor(Math.random()*6)+1;

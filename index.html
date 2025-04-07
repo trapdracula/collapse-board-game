@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/script.js" defer></script>
-    <script src="js/collapse.js" defer></script>
+    <!-- <script src="js/collapse.js" defer></script>-->
     <title>Collapse!</title>
+    <h1 class="welcome">Time to play Collapse!</h1>
   </head>
   <body>
-    <div class="dice-container">
-      <div class="dice">
-        <div class="dice-dot"></div>
+    <button type="button" class="play-btn" onclick="startGame()">Play</button>
+    <div class="main-content" style="display: none">
+      <div id="dice-container">
+        <div id="die1"></div>
+        <div id="die2"></div>
       </div>
+      <div id="modal">
+        <form action="#">
+          <label for="p1"></label>
+          <label for="player"></label>
+        </form>
+      </div>
+      <button type="button" class="btn-roll-dice" onclick="diceRoller()">
+        Roll Dice
+      </button>
     </div>
-    <button type="button" class="btn-roll-dice" onclick="rollDice()">
-      Roll Dice
-    </button>
   </body>
 </html>

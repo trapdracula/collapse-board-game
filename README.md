@@ -99,5 +99,5 @@
 
 ## 💡 Credits
 
-Game design by **Imani Lancaster**  
+Game design by **Matthew Lancaster**  
 Created with HTML, CSS, and JavaScript 🎲  

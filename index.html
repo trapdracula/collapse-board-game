@@ -10,20 +10,25 @@
     <h1 class="welcome">Time to play Collapse!</h1>
   </head>
   <body>
-    <button type="button" class="play-btn" onclick="getInfo()">Play</button>
-    <div id="input-form" style="display: none">
-      <form action="" id="setup">
-        <label for="player-count">Number of players</label>
-        <input type="number" id="playerCount" min="3" max="6"/>
-        <label for="players">Player names</label>
-        <input type="text" id="player1"/>
-        <input type="text" id="player2"/>
-        <input type="text" id="player3"/>
-        <input type="text" id="player4" style="display:none;"/>
-        <input type="text" id="player5" style="display:none;"/>
-        <input type="text" id="player6" style="display:none;"/>
-        <input type="submit" onclick="getPlayers()">
-      </form>
+    <div id="myModal">
+      <h3>Welcome to Collapse(lite)!</h3>
+     <p>Collapse is a game made much like Monopoly to provide commentary on the perils of capitalism!</p>
+     <ul class="rules-list"> Here are the rules!
+      <li>In this version there are only three players, two community players and the Bank</li>
+      <li>The players are called "The Community" and is made up of every player that is not the designated bank.</li>
+      <li>The Bank, is the player with the most points, but initially they are randomly chosen.</li>
+      <li>The goal is for either the bank to accumulate 50 points or for the community to accumulate 100 points collectively.</li>
+     </ul>
+    <button type="button" class="play-btn" onclick="closeModal()">Play</button>
+    </div>
+    <div id="main-content">
+      <div id="dice-container">
+        <div id="die1"></div>
+        <div id="die2"></div>
+      </div>
+      <button type="button" class="btn-roll-dice" onclick="diceRoller()">
+        Roll Dice
+      </button>
     </div>
   </body>
 </html>

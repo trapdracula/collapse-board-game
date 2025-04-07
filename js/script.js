@@ -1,36 +1,18 @@
-const game = {
-   players: [], // Array to store player objects
-   bank: null, // The current bank player
-   equityPile: 0, // The shared equity pile
-   turnIndex: 0, // Keeps track of whose turn it is
-   playerCount: 0, // Sets number of players
-};
+const players = [
+   { name: "Player 1", score: 0 },
+   { name: "Player 2", score: 0 },
+   { name: "Player 3", score: 0 }
+];
+
 var diceContainer = document.getElementById("dice-container");
 var die1 = document.getElementById("die1")
 var die2 = document.getElementById("die2")
-
-const form = document.getElementById("setup");
-function getInfo() {
-   document.getElementById('input-form').style.display = 'block';
-};
-function getPlayers() {
-   document.getElementById('playerCount');
-   if (playerCount = 4)
-      document.getElementByid('player4').style.display = "block";
-   if (playerCount = 5)
-      document.getElementByid('player4').style.display = "block";
-   document.getElementsById('player5').style.display = "block";
-   if (playerCount = 6)
-      document.getElementByid('player4').style.display = "block";
-   document.getElementById('player5').style.display = "block";
-   document.getElementById('player6').style.display = "block";
+function openModal() {
+   document.getElementById("myModal").style.display = "block";
 }
-
-form.addEventListener('playerCount', getPlayers)
-
-getPlayers;
-function startGame() {
-   document.getElementsByClassName('main-content').style.display = 'block'
+function closeModal() {
+   document.getElementById("myModal").style.display = "none";
+   document.getElementById("main-content").style.display = "block";
 }
 function rollDie1() {
    return Math.floor(Math.random() * 6) + 1;
@@ -47,7 +29,10 @@ function diceRoller() {
    die2.innerHTML = pts2;
 }
 
-if (pts1 + pts2) {
+function updateScores() {
+
+}
+if (pts1 + pts2 % < 0) {
 
 } else {
 

@@ -10,27 +10,20 @@
     <h1 class="welcome">Time to play Collapse!</h1>
   </head>
   <body>
-    <button type="button" class="play-btn" onclick="startGame()">Play</button>
+    <button type="button" class="play-btn" onclick="getInfo()">Play</button>
     <div id="input-form" style="display: none">
-      <form action="#">
+      <form action="" id="setup">
         <label for="player-count">Number of players</label>
-        <input type="number" id="playerCount" />
+        <input type="number" id="playerCount" min="3" max="6"/>
+        <label for="players">Player names</label>
+        <input type="text" id="player1"/>
+        <input type="text" id="player2"/>
+        <input type="text" id="player3"/>
+        <input type="text" id="player4" style="display:none;"/>
+        <input type="text" id="player5" style="display:none;"/>
+        <input type="text" id="player6" style="display:none;"/>
+        <input type="submit" onclick="getPlayers()">
       </form>
-    </div>
-    <div class="main-content">
-      <div id="dice-container">
-        <div id="die1"></div>
-        <div id="die2"></div>
-      </div>
-      <div id="modal">
-        <form action="#">
-          <label for="p1"></label>
-          <label for="player"></label>
-        </form>
-      </div>
-      <button type="button" class="btn-roll-dice" onclick="diceRoller()">
-        Roll Dice
-      </button>
     </div>
   </body>
 </html>

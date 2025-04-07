@@ -9,26 +9,46 @@ var diceContainer = document.getElementById("dice-container");
 var die1 = document.getElementById("die1")
 var die2 = document.getElementById("die2")
 
-function startGame(){
+const form = document.getElementById("setup");
+function getInfo() {
    document.getElementById('input-form').style.display = 'block';
 };
-   function rollDie1(){
-   return Math.floor(Math.random()*6)+1;
-};
-function rollDie2(){
-   return Math.floor(Math.random()*6)+1;
-}
-function diceRoller(){
-   var pts1 = rollDie1();
-   var pts2 = rollDie2();
-      diceContainer.style.color = "Black";
-      diceContainer.style.fontSize = "36px";
-      die1.innerHTML = pts1;
-      die2.innerHTML = pts2;
+function getPlayers() {
+   document.getElementById('playerCount');
+   if (playerCount = 4)
+      document.getElementByid('player4').style.display = "block";
+   if (playerCount = 5)
+      document.getElementByid('player4').style.display = "block";
+   document.getElementsById('player5').style.display = "block";
+   if (playerCount = 6)
+      document.getElementByid('player4').style.display = "block";
+   document.getElementById('player5').style.display = "block";
+   document.getElementById('player6').style.display = "block";
 }
 
-if (pts1+pts2 ) {
-   
+form.addEventListener('playerCount', getPlayers)
+
+getPlayers;
+function startGame() {
+   document.getElementsByClassName('main-content').style.display = 'block'
+}
+function rollDie1() {
+   return Math.floor(Math.random() * 6) + 1;
+};
+function rollDie2() {
+   return Math.floor(Math.random() * 6) + 1;
+}
+function diceRoller() {
+   var pts1 = rollDie1();
+   var pts2 = rollDie2();
+   diceContainer.style.color = "Black";
+   diceContainer.style.fontSize = "36px";
+   die1.innerHTML = pts1;
+   die2.innerHTML = pts2;
+}
+
+if (pts1 + pts2) {
+
 } else {
-   
+
 }

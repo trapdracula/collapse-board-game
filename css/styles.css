@@ -1,4 +1,4 @@
-.welcome{
+.welcome {
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 5%;
@@ -8,24 +8,44 @@
 }
 
 #dice-container {
-  display: inline;
+    display: inline;
 }
+
 .btn-roll-dice {
     margin-top: 10px;
 }
+
 #die1 {
     display: flexbox;
 }
+
 #die2 {
     display: flexbox;
 }
-.play-btn{
-    font-family:sans-serif;
+
+.play-btn {
+    font-family: sans-serif;
     display: grid;
     font-size: 75px;
-    
+
 }
-#input-form{
-    border-radius: 25px;
-    background-color: blue ;
+
+#myModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: fadeIn 5s;
+}
+
+#main-content {
+    display: none;
+}
+
+h3 {
+    position: relative;
 }

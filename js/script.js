@@ -6,8 +6,8 @@ const players = [
 const pts1 = rollDie1();
 const pts2 = rollDie2();
 const equityPile = 0;
-const ePts = rolls % 2;
 const rolls = pts1 + pts2;
+const ePts = rolls % 2;
 
 var diceContainer = document.getElementById("dice-container");
 var die1 = document.getElementById("die1")
